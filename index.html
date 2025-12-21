@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contest Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      border-left: 5px solid #667eea;
+      background: #f7f7f7;
+      border-radius: 6px;
+    }
+
+    .warning {
+      margin-top: 10px;
+      padding: 10px;
+      background: #fff3cd;
+      border-left: 5px solid #ff9800;
+    }
+
+    .error {
+      margin-top: 20px;
+      padding: 10px;
+      background: #f8d7da;
+      border-left: 5px solid #dc3545;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Contest Results</h1>
+
+    <input id="nameInput" placeholder="Enter your name (case insensitive)">
+    <button onclick="search()">Get Result</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
