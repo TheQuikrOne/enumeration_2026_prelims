@@ -47,9 +47,21 @@ function showResult(r) {
   let html = `
     <div class="result">
       <h3>${r.Name}</h3>
+
       <p><b>Rank:</b> ${r.Rank}</p>
-      <p><b>Total Score:</b> ${r.TotalScore}</p>
       <p><b>Source:</b> ${r.Source}</p>
+
+      <hr>
+
+      <p><b>Section-wise Raw Scores</b></p>
+      <p>Warmup: ${r.WarmupRaw}</p>
+      <p>Single Choice Questions (SCQ): ${r.SCQRaw}</p>
+      <p>Multiple Choice Questions (MCQ): ${r.MCQRaw}</p>
+      <p>Integer Questions: ${r.IntRaw}</p>
+
+      <hr>
+
+      <p><b>Total Marks:</b> ${r.TotalScore}</p>
   `;
 
   if (r.Proctoring && r.Proctoring.toLowerCase() !== 'clear') {
@@ -63,3 +75,4 @@ function showResult(r) {
   html += `</div>`;
   return html;
 }
+
