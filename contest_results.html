@@ -187,10 +187,545 @@
         // EMBED YOUR CSV DATA HERE
         // Replace this sample data with your actual CSV content
         const csvDataString = `Rank,Source,Name,WarmupRaw,SCQRaw,MCQRaw,IntRaw,WarmupScore,SCQScore,MCQScore,IntScore,TotalScore,Proctoring
-1,School A,John Doe,10,15,20,8,10,30,40,16,96,Clear
-2,School B,Jane Smith,9,14,19,7,9,28,38,14,89,Clear
-3,School C,Bob Johnson,8,13,18,6,8,26,36,12,82,Flagged
-4,School D,Alice Williams,10,16,21,9,10,32,42,18,102,Clear`;
+1,Other Platform,ashank vatsa,5,7,7,7,5,21.320081,33.760619,43.363571,103.444272,Flagged
+2,Other Platform,Samrat Singh,5,7,5,5,5,21.320081,24.114728,30.973979,81.408789,Clear
+3,Google Forms,Uddipa Pal,5,6,3,7,5,18.274355,14.468837,43.363571,81.106763,Clear
+4,Google Forms,Paras,5,6,6,7,5,18.274355,14.468837,43.363571,81.106763,Flagged
+5,Other Platform,Aniket,5,6,8,3,5,18.274355,38.583565,18.584388,80.442308,Flagged
+6,Other Platform,Mohammed Raed Ul Islam Reshi,5,7,6,4,5,21.320081,28.937674,24.779183,80.036938,Clear
+7,Other Platform,Surjendu Kar,5,6,4,5,5,18.274355,19.291782,30.973979,73.540117,Clear
+8,Other Platform,Rudra Jadhav,5,7,4,4,5,21.320081,19.291782,24.779183,70.391047,No Rough Work
+9,Other Platform,Ahmed Bin Ajaz Bazaz,5,7,6,2,5,21.320081,28.937674,12.389592,67.647347,Flagged
+10,Google Forms,Utkarsh Shah,5,7,4,3,5,21.320081,19.291782,18.584388,64.196251,No Rough Work
+11,Other Platform,Nipun Shah,5,7,4,3,5,21.320081,19.291782,18.584388,64.196251,Clear
+12,Other Platform,Deepanshu Gupta,5,7,4,3,5,21.320081,19.291782,18.584388,64.196251,No Rough Work
+13,Other Platform,Aritra Saha,5,7,4,3,5,21.320081,19.291782,18.584388,64.196251,Clear
+14,Google Forms,Muhammad Taha Salman Lone,5,7,6,1,5,21.320081,28.937674,6.194796,61.452551,No Rough Work
+15,Other Platform,Shagun Jha,5,4,4,4,5,12.182904,19.291782,24.779183,61.253869,Flagged
+16,Other Platform,Prince Abraham,5,4,5,3,5,12.182904,24.114728,18.584388,59.882019,No Rough Work
+17,Other Platform,Darshan Banerjee,5,6,3,3,5,18.274355,14.468837,18.584388,56.32758,Clear
+18,Other Platform,Shaurya Agrawal,5,6,3,3,5,18.274355,14.468837,18.584388,56.32758,Flagged
+19,Other Platform,Zayan Humd,5,5,3,3,5,15.22863,14.468837,18.584388,53.281854,Clear
+20,Google Forms,Ayush Narayan,5,7,3,2,5,21.320081,14.468837,12.389592,53.17851,No Rough Work
+21,Google Forms,Sonali Joshi,4,4,5,2,4,12.182904,24.114728,12.389592,52.687223,No Rough Work
+22,Other Platform,Avradeep Dutta,4,6,1,4,4,18.274355,4.822946,24.779183,51.876484,No Rough Work
+23,Other Platform,Kumar Rachit,5,6,2,3,5,18.274355,9.645891,18.584388,51.504634,Clear
+24,Other Platform,Ashwik Ranjan,5,6,2,3,5,18.274355,9.645891,18.584388,51.504634,Clear
+25,Other Platform,Wriddhiman Ghoshal,5,3,5,2,5,9.137178,24.114728,12.389592,50.641498,Clear
+26,Other Platform,Paras Mani,0,0,0,8,0,0,0,49.558367,49.558367,Clear
+27,Other Platform,Navansh Agarwal,5,5,6,0,5,15.22863,28.937674,0,49.166303,Clear
+28,Other Platform,Darsh Gupta,5,5,6,0,5,15.22863,28.937674,0,49.166303,Clear
+29,Other Platform,Dhruv Shukla,5,4,4,2,5,12.182904,19.291782,12.389592,48.864278,Clear
+30,Other Platform,Saraswata Sadhu,5,7,2,2,5,21.320081,9.645891,12.389592,48.355564,Clear
+31,Other Platform,Saatvik Jha,5,3,3,3,5,9.137178,14.468837,18.584388,47.190402,Clear
+32,Google Forms,Abhay Kumar,5,5,4,1,5,15.22863,19.291782,6.194796,45.715208,Clear
+33,Other Platform,Reyansh Singhal,5,5,5,0,5,15.22863,24.114728,0,44.343358,Clear
+34,Other Platform,Apurv Sarkar,5,5,1,3,5,15.22863,4.822946,18.584388,43.635963,Clear
+35,Other Platform,Yuvraj Sandhu,5,7,1,2,5,21.320081,4.822946,12.389592,43.532619,Clear
+36,Google Forms,Ravi raj,5,4,4,1,5,12.182904,19.291782,6.194796,42.669482,Clear
+37,Google Forms,Ravi raj,5,4,4,1,5,12.182904,19.291782,6.194796,42.669482,Clear
+38,Google Forms,OMKUMAR RAO,5,6,4,0,5,18.274355,19.291782,0,42.566138,Clear
+39,Other Platform,shivam kumar,5,5,2,2,5,15.22863,9.645891,12.389592,42.264112,Clear
+40,Other Platform,Shlok Anand,5,6,1,2,5,18.274355,4.822946,12.389592,40.486893,Clear
+41,Other Platform,Aahan Mishra,4,3,3,2,4,9.137178,14.468837,12.389592,39.995606,Clear
+42,Other Platform,Animesh Behera,4,5,3,1,4,15.22863,14.468837,6.194796,39.892262,Clear
+43,Other Platform,Himanish Basu,4,6,1,2,4,18.274355,4.822946,12.389592,39.486893,Clear
+44,Other Platform,Akshat Thakur,5,4,2,2,5,12.182904,9.645891,12.389592,39.218387,Clear
+45,Other Platform,Aradhay Aarav,5,4,2,2,5,12.182904,9.645891,12.389592,39.218387,Clear
+46,Google Forms,Vaibhavi Sahoo,5,4,2,2,5,12.182904,9.645891,12.389592,39.218387,Clear
+47,Other Platform,Heshul Garg,5,4,2,2,5,12.182904,9.645891,12.389592,39.218387,Clear
+48,Other Platform,Pranshu Baranwal,5,6,2,1,5,18.274355,9.645891,6.194796,39.115043,Clear
+49,Other Platform,Dhruva Lokesha,5,6,2,1,5,18.274355,9.645891,6.194796,39.115043,Clear
+50,Other Platform,Arha Bhattacharya,5,6,2,1,5,18.274355,9.645891,6.194796,39.115043,Clear
+51,Google Forms,Arjun Jugalkishor Chitlange,5,3,0,4,5,9.137178,0,24.779183,38.916361,Clear
+52,Other Platform,Rishu Priya,4,5,4,0,4,15.22863,19.291782,0,38.520412,Clear
+53,Other Platform,Nilarghya Chatterjee,5,2,3,2,5,6.091452,14.468837,12.389592,37.94988,Clear
+54,Other Platform,Sourik Baral,5,4,3,1,5,12.182904,14.468837,6.194796,37.846536,Clear
+55,Other Platform,SHRUTI SINGH,5,4,3,1,5,12.182904,14.468837,6.194796,37.846536,Clear
+56,Google Forms,Shankar H,5,4,3,1,5,12.182904,14.468837,6.194796,37.846536,Clear
+57,Other Platform,Divyansh Upadhyay,5,4,3,1,5,12.182904,14.468837,6.194796,37.846536,Clear
+58,Google Forms,Aadarsh Singh,5,5,1,2,5,15.22863,4.822946,12.389592,37.441167,Clear
+59,Other Platform,Maithili Ahuja,5,7,1,1,5,21.320081,4.822946,6.194796,37.337823,Clear
+60,Other Platform,Anshuman Tiwari,4,4,3,1,4,12.182904,14.468837,6.194796,36.846536,Clear
+61,Google Forms,Ayush Raj,5,4,4,0,5,12.182904,19.291782,0,36.474686,Clear
+62,Other Platform,Kartik Nagore,5,1,2,3,5,3.045726,9.645891,18.584388,36.276005,Clear
+63,Other Platform,Vaibhavi Sahoo,5,3,2,2,5,9.137178,9.645891,12.389592,36.172661,Clear
+64,Other Platform,Suryadeep Gupta,5,5,2,1,5,15.22863,9.645891,6.194796,36.069317,Clear
+65,Other Platform,Shiwang Bhardwaj,5,5,2,1,5,15.22863,9.645891,6.194796,36.069317,Clear
+66,Other Platform,Lakshin,5,6,0,2,5,18.274355,0,12.389592,35.663947,Clear
+67,Other Platform,SHUBH AGARWAL,4,5,2,1,4,15.22863,9.645891,6.194796,35.069317,Clear
+68,Other Platform,Nilimesh Koley,5,3,3,1,5,9.137178,14.468837,6.194796,34.80081,Clear
+69,Other Platform,Aashish Pahwa,5,3,3,1,5,9.137178,14.468837,6.194796,34.80081,Clear
+70,Other Platform,Biswadeep Muhury,5,3,3,1,5,9.137178,14.468837,6.194796,34.80081,Clear
+71,Other Platform,Aadarsh Singh,5,4,1,2,5,12.182904,4.822946,12.389592,34.395441,Clear
+72,Google Forms,Arnav Anoop Narayanan,5,4,1,2,5,12.182904,4.822946,12.389592,34.395441,Clear
+73,Other Platform,AARYAMAN SARAOGI,5,4,1,2,5,12.182904,4.822946,12.389592,34.395441,Clear
+74,Other Platform,Aarav Mishra,5,6,1,1,5,18.274355,4.822946,6.194796,34.292097,Clear
+75,Google Forms,Yugant Punjekar,4,3,3,1,4,9.137178,14.468837,6.194796,33.80081,Clear
+76,Other Platform,Abhinav Pandey,5,2,2,2,5,6.091452,9.645891,12.389592,33.126935,Clear
+77,Other Platform,Ishat Kumar Jha,5,4,2,1,5,12.182904,9.645891,6.194796,33.023591,Clear
+78,Other Platform,Aarnav Sontakke,5,4,2,1,5,12.182904,9.645891,6.194796,33.023591,Clear
+79,Other Platform,ANSHIKA THAKUR,5,4,2,1,5,12.182904,9.645891,6.194796,33.023591,Clear
+80,Other Platform,Samanyu Pradhan,5,4,2,1,5,12.182904,9.645891,6.194796,33.023591,Clear
+81,Other Platform,Sumant Gupta,5,4,2,1,5,12.182904,9.645891,6.194796,33.023591,Clear
+82,Other Platform,Sai Srivardhan Ram,4,2,2,2,4,6.091452,9.645891,12.389592,32.126935,Clear
+83,Other Platform,Aman Kumar,5,2,3,1,5,6.091452,14.468837,6.194796,31.755085,Clear
+84,Other Platform,Smyan Verma,5,4,3,0,5,12.182904,14.468837,0,31.65174,Clear
+85,Other Platform,Vyom Mittal,5,4,3,0,5,12.182904,14.468837,0,31.65174,Clear
+86,Other Platform,Rounak Chatterjee,5,3,1,2,5,9.137178,4.822946,12.389592,31.349715,Clear
+87,Other Platform,Jalaj Arya,5,3,1,2,5,9.137178,4.822946,12.389592,31.349715,Clear
+88,Other Platform,UTKRISHT SINGH,5,3,1,2,5,9.137178,4.822946,12.389592,31.349715,Clear
+89,Other Platform,SARTHAK MISHRA,5,3,1,2,5,9.137178,4.822946,12.389592,31.349715,Clear
+90,Other Platform,Aswini R,5,5,1,1,5,15.22863,4.822946,6.194796,31.246371,Clear
+91,Other Platform,Varad Patil,5,5,1,1,5,15.22863,4.822946,6.194796,31.246371,Clear
+92,Other Platform,Aliasgar Sapatwala,5,5,1,1,5,15.22863,4.822946,6.194796,31.246371,Clear
+93,Google Forms,Nishant Kumar Sahoo,5,5,1,1,5,15.22863,4.822946,6.194796,31.246371,Clear
+94,Other Platform,Anshuman Tripathy,4,3,1,2,4,9.137178,4.822946,12.389592,30.349715,Clear
+95,Other Platform,Rishikesh Muralimohan,4,5,1,1,4,15.22863,4.822946,6.194796,30.246371,Clear
+96,Other Platform,Sourasis Kundu,5,1,2,2,5,3.045726,9.645891,12.389592,30.081209,Clear
+97,Other Platform,Shrika Thakur,5,3,2,1,5,9.137178,9.645891,6.194796,29.977865,Clear
+98,Other Platform,AYUSH KUMAR NAYAK,5,3,2,1,5,9.137178,9.645891,6.194796,29.977865,Clear
+99,Google Forms,Rishav Raj,5,5,2,0,5,15.22863,9.645891,0,29.874521,Clear
+100,Google Forms,Akshaj Saxena,5,5,2,0,5,15.22863,9.645891,0,29.874521,Clear
+101,Google Forms,Aarush,5,5,2,0,5,15.22863,9.645891,0,29.874521,Clear
+102,Other Platform,Apanshula Ani,5,5,2,0,5,15.22863,9.645891,0,29.874521,Clear
+103,Other Platform,PRATYUSH SHARMA,5,5,2,0,5,15.22863,9.645891,0,29.874521,Clear
+104,Other Platform,PIYUSH KUMAR,5,2,0,3,5,6.091452,0,18.584388,29.675839,Clear
+105,Other Platform,Aryan Gupta,5,6,0,1,5,18.274355,0,6.194796,29.469151,Clear
+106,Other Platform,Dhrubasish Dutta,4,1,2,2,4,3.045726,9.645891,12.389592,29.081209,Clear
+107,Other Platform,Arnav Baibhaw,4,5,2,0,4,15.22863,9.645891,0,28.874521,Clear
+108,Other Platform,Srinita Banerjee,5,3,3,0,5,9.137178,14.468837,0,28.606015,Clear
+109,Other Platform,Farhan,4,4,0,2,4,12.182904,0,12.389592,28.572495,Clear
+110,Other Platform,Swasti Tiwari,5,4,1,1,5,12.182904,4.822946,6.194796,28.200645,Clear
+111,Other Platform,Sarvesh Shubham,5,4,1,1,5,12.182904,4.822946,6.194796,28.200645,Clear
+112,Other Platform,Manash Ranjan,5,4,1,1,5,12.182904,4.822946,6.194796,28.200645,Clear
+113,Other Platform,Reha Sharif,4,3,3,0,4,9.137178,14.468837,0,27.606015,Clear
+114,Google Forms,Aditi Shankar,5,2,2,1,5,6.091452,9.645891,6.194796,26.932139,Clear
+115,Other Platform,Nishant Kumar Sahoo,5,2,2,1,5,6.091452,9.645891,6.194796,26.932139,Clear
+116,Other Platform,ABHINAV ANAND,5,2,2,1,5,6.091452,9.645891,6.194796,26.932139,Clear
+117,Other Platform,PRAGATI GOEL,5,2,2,1,5,6.091452,9.645891,6.194796,26.932139,Clear
+118,Other Platform,Ashwajit Wankhade,5,2,2,1,5,6.091452,9.645891,6.194796,26.932139,Clear
+119,Other Platform,Antareep Santra,5,2,2,1,5,6.091452,9.645891,6.194796,26.932139,Clear
+120,Other Platform,Aditya Kumar,5,4,2,0,5,12.182904,9.645891,0,26.828795,Clear
+121,Other Platform,Anant Pandey,5,4,2,0,5,12.182904,9.645891,0,26.828795,Clear
+122,Other Platform,Shreyan Tripathy,5,4,2,0,5,12.182904,9.645891,0,26.828795,Clear
+123,Other Platform,Hetal Razdan,5,4,2,0,5,12.182904,9.645891,0,26.828795,Clear
+124,Other Platform,Nayan Bansal,5,3,0,2,5,9.137178,0,12.389592,26.526769,Clear
+125,Other Platform,Ashutosh Raj Kumar,5,3,0,2,5,9.137178,0,12.389592,26.526769,Clear
+126,Google Forms,Ekta Asudani,5,3,0,2,5,9.137178,0,12.389592,26.526769,Clear
+127,Other Platform,SARANSH TYAGI,5,5,0,1,5,15.22863,0,6.194796,26.423425,Clear
+128,Other Platform,Ayush Narayan,5,5,0,1,5,15.22863,0,6.194796,26.423425,Clear
+129,Other Platform,Hemant Chaudhary,5,5,0,1,5,15.22863,0,6.194796,26.423425,Clear
+130,Other Platform,sondarya alwela,3,6,1,0,3,18.274355,4.822946,0,26.097301,Clear
+131,Google Forms,Dipankar Bembey,4,2,2,1,4,6.091452,9.645891,6.194796,25.932139,Clear
+132,Google Forms,Archit kumar,4,4,2,0,4,12.182904,9.645891,0,25.828795,Clear
+133,Other Platform,Kamal Issar,4,4,2,0,4,12.182904,9.645891,0,25.828795,Clear
+134,Other Platform,Chaitanya Vadehra,2,3,3,0,2,9.137178,14.468837,0,25.606015,Clear
+135,Other Platform,Rohit Pradhan,5,2,3,0,5,6.091452,14.468837,0,25.560289,Clear
+136,Other Platform,Vedant Choble,4,3,0,2,4,9.137178,0,12.389592,25.526769,Clear
+137,Other Platform,Swara Bojewar,4,3,0,2,4,9.137178,0,12.389592,25.526769,Clear
+138,Other Platform,Adhin Raj V,4,5,0,1,4,15.22863,0,6.194796,25.423425,Clear
+139,Google Forms,Gulshan kumar,4,5,0,1,4,15.22863,0,6.194796,25.423425,Clear
+140,Other Platform,Arnab Nath,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+141,Google Forms,Arnav Sharma,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+142,Other Platform,Meghadri Banerjee,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+143,Other Platform,SHOURYADIP CHANDA,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+144,Other Platform,Adreeja Aich Roy,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+145,Google Forms,Abdul Hadi Qureshi,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+146,Other Platform,Ayaan Singh,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+147,Other Platform,Yuvraj Salotra,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+148,Other Platform,Sarthak Lokhande,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+149,Other Platform,Jai Mishra,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+150,Other Platform,Jemin Anghan,5,3,1,1,5,9.137178,4.822946,6.194796,25.154919,Clear
+151,Google Forms,ANIK SARDAR,5,5,1,0,5,15.22863,4.822946,0,25.051575,Clear
+152,Other Platform,sreepranad Devarakonda,5,5,1,0,5,15.22863,4.822946,0,25.051575,Clear
+153,Other Platform,Ishan Tuteja,5,5,1,0,5,15.22863,4.822946,0,25.051575,Clear
+154,Other Platform,Nabhanyu Joshi,5,5,1,0,5,15.22863,4.822946,0,25.051575,Clear
+155,Other Platform,Aryan Kumar,4,3,1,1,4,9.137178,4.822946,6.194796,24.154919,Clear
+156,Google Forms,Adhin Raj V,4,3,1,1,4,9.137178,4.822946,6.194796,24.154919,Clear
+157,Google Forms,Shaurav Gupta,4,3,1,1,4,9.137178,4.822946,6.194796,24.154919,Clear
+158,Google Forms,Anish Gupta,4,3,1,1,4,9.137178,4.822946,6.194796,24.154919,Clear
+159,Other Platform,SHUBH SINGHAL,5,3,2,0,5,9.137178,9.645891,0,23.783069,Clear
+160,Other Platform,NISHANT RAJ,5,3,2,0,5,9.137178,9.645891,0,23.783069,Clear
+161,Other Platform,Adhiraj Singh Anand,5,3,2,0,5,9.137178,9.645891,0,23.783069,Clear
+162,Other Platform,Advay Vivek,5,3,2,0,5,9.137178,9.645891,0,23.783069,Clear
+163,Other Platform,OM KUMAR,5,2,0,2,5,6.091452,0,12.389592,23.481043,Clear
+164,Google Forms,Nischay Pandey,5,2,0,2,5,6.091452,0,12.389592,23.481043,Clear
+165,Other Platform,ashwakant jambhorikar,5,2,0,2,5,6.091452,0,12.389592,23.481043,Clear
+166,Google Forms,Ekta Asudani,5,2,0,2,5,6.091452,0,12.389592,23.481043,Clear
+167,Google Forms,Shreyas Revanuru,5,4,0,1,5,12.182904,0,6.194796,23.377699,Clear
+168,Other Platform,AARNA CHAPLOT,5,4,0,1,5,12.182904,0,6.194796,23.377699,Clear
+169,Other Platform,Atharv Tripathi,5,6,0,0,5,18.274355,0,0,23.274355,Clear
+170,Other Platform,Naitik Choudhary,3,5,1,0,3,15.22863,4.822946,0,23.051575,Clear
+171,Google Forms,Sinjan Majumder,4,1,2,1,4,3.045726,9.645891,6.194796,22.886413,Clear
+172,Other Platform,Siddhant Panigrahi,4,3,2,0,4,9.137178,9.645891,0,22.783069,Clear
+173,Other Platform,Shashidhar Devvanshi,4,3,2,0,4,9.137178,9.645891,0,22.783069,Clear
+174,Other Platform,Rudransh,4,2,0,2,4,6.091452,0,12.389592,22.481043,Clear
+175,Other Platform,Soujatya Sarangi,5,2,1,1,5,6.091452,4.822946,6.194796,22.109193,Clear
+176,Other Platform,Swastik Panja,5,2,1,1,5,6.091452,4.822946,6.194796,22.109193,Clear
+177,Other Platform,Shankar H,5,2,1,1,5,6.091452,4.822946,6.194796,22.109193,Clear
+178,Other Platform,Kushagra Roy,5,2,1,1,5,6.091452,4.822946,6.194796,22.109193,Clear
+179,Google Forms,Anup Nilesh Zambre,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+180,Google Forms,Aritra Das Sarkar,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+181,Google Forms,Arindam Shee,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+182,Other Platform,Nisarg Rathod,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+183,Other Platform,Debangshu Sinha,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+184,Other Platform,Riddhiman Seal,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+185,Other Platform,Virat Sharma,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+186,Other Platform,Nirmay Pratap Singh,5,4,1,0,5,12.182904,4.822946,0,22.005849,Clear
+187,Other Platform,kartik sharma,3,3,2,0,3,9.137178,9.645891,0,21.783069,Clear
+188,Other Platform,Kishore Kumaar,3,6,0,0,3,18.274355,0,0,21.274355,Clear
+189,Google Forms,Diptayan Saha,4,2,1,1,4,6.091452,4.822946,6.194796,21.109193,Clear
+190,Google Forms,Aru Goyal,4,2,1,1,4,6.091452,4.822946,6.194796,21.109193,Clear
+191,Other Platform,Arnav Agrawal,4,2,1,1,4,6.091452,4.822946,6.194796,21.109193,Clear
+192,Other Platform,Vanshika Priyadarshani Nayak,1,5,1,0,1,15.22863,4.822946,0,21.051575,Clear
+193,Other Platform,Nayan Jain,4,4,1,0,4,12.182904,4.822946,0,21.005849,Clear
+194,Other Platform,Naman Rajpurohit,4,4,1,0,4,12.182904,4.822946,0,21.005849,Clear
+195,Other Platform,Prabhjot Singh,4,4,1,0,4,12.182904,4.822946,0,21.005849,Clear
+196,Other Platform,Chakresh Mohanty,5,2,2,0,5,6.091452,9.645891,0,20.737343,Clear
+197,Other Platform,Ashwin Patel,5,2,2,0,5,6.091452,9.645891,0,20.737343,Clear
+198,Other Platform,Mukunda Bharadwaj,5,2,2,0,5,6.091452,9.645891,0,20.737343,Clear
+199,Other Platform,Shreyas Revanuru,5,2,2,0,5,6.091452,9.645891,0,20.737343,Clear
+200,Other Platform,Apurv Srivastava,5,2,2,0,5,6.091452,9.645891,0,20.737343,Clear
+201,Google Forms,Zaid Nisar,5,3,0,1,5,9.137178,0,6.194796,20.331974,Clear
+202,Google Forms,Soham Rajabhau Nalbe,5,3,0,1,5,9.137178,0,6.194796,20.331974,Clear
+203,Other Platform,Divyanshu Ranjan,5,3,0,1,5,9.137178,0,6.194796,20.331974,Clear
+204,Other Platform,Shubhi Soni,5,3,0,1,5,9.137178,0,6.194796,20.331974,Clear
+205,Other Platform,Amritesh Bhar,5,3,0,1,5,9.137178,0,6.194796,20.331974,Clear
+206,Google Forms,Sk Munahid Hossain,5,5,0,0,5,15.22863,0,0,20.22863,Clear
+207,Other Platform,Nandini,5,5,0,0,5,15.22863,0,0,20.22863,Clear
+208,Other Platform,Debarchan Neogi,5,5,0,0,5,15.22863,0,0,20.22863,Clear
+209,Google Forms,Golden kumar,3,2,1,1,3,6.091452,4.822946,6.194796,20.109193,Clear
+210,Other Platform,Abhigyan Sinha,4,2,2,0,4,6.091452,9.645891,0,19.737343,Clear
+211,Other Platform,Prince Yadav,4,1,0,2,4,3.045726,0,12.389592,19.435318,Clear
+212,Other Platform,Shagun Pandey,5,1,1,1,5,3.045726,4.822946,6.194796,19.063467,Clear
+213,Other Platform,Aarav Agrawal,5,1,1,1,5,3.045726,4.822946,6.194796,19.063467,Clear
+214,Other Platform,Aayan Mukhopadhyay,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+215,Google Forms,Krishna,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+216,Other Platform,Varun Menon,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+217,Other Platform,Rudransh Srivastav,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+218,Other Platform,SHWETANK AGRAWAL,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+219,Other Platform,Shreyas Sujiithpriyom,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+220,Other Platform,Yash Gautam,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+221,Other Platform,Harshit Medhi,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+222,Google Forms,ADITYA TIWARI,5,3,1,0,5,9.137178,4.822946,0,18.960123,Clear
+223,Other Platform,Darsh Patel,3,3,0,1,3,9.137178,0,6.194796,18.331974,Clear
+224,Google Forms,Aradhya,3,3,0,1,3,9.137178,0,6.194796,18.331974,Clear
+225,Other Platform,Dipankar Bembey,4,1,1,1,4,3.045726,4.822946,6.194796,18.063467,Clear
+226,Google Forms,Ayushi Chatterjee,4,1,1,1,4,3.045726,4.822946,6.194796,18.063467,Clear
+227,Google Forms,Shivam Rajiv Idhate,4,3,1,0,4,9.137178,4.822946,0,17.960123,Clear
+228,Google Forms,Atharv Ninawe,4,3,1,0,4,9.137178,4.822946,0,17.960123,Clear
+229,Other Platform,LAKSHMIKANTH N PAI,5,2,0,1,5,6.091452,0,6.194796,17.286248,Clear
+230,Google Forms,SANWARIYA PURBEY,5,2,0,1,5,6.091452,0,6.194796,17.286248,Clear
+231,Other Platform,KUSHAGRA DWIVEDY,5,2,0,1,5,6.091452,0,6.194796,17.286248,Clear
+232,Other Platform,Abhiraj kumar,5,2,0,1,5,6.091452,0,6.194796,17.286248,Clear
+233,Other Platform,Muhammad Farhan,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+234,Other Platform,prabhav Gupta,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+235,Other Platform,Ekansh Goyal,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+236,Google Forms,Ritwik kumar Ghosh,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+237,Other Platform,Aditya Sharma,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+238,Other Platform,Aarush Sinha,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+239,Other Platform,Unmana Das,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+240,Other Platform,Ayushman Basu,5,4,0,0,5,12.182904,0,0,17.182904,Clear
+241,Other Platform,Jaspreet Singh,3,3,1,0,3,9.137178,4.822946,0,16.960123,Clear
+242,Other Platform,Saanvi Pandey,4,2,0,1,4,6.091452,0,6.194796,16.286248,Clear
+243,Other Platform,Subasree ls,4,2,0,1,4,6.091452,0,6.194796,16.286248,Clear
+244,Other Platform,Hardik Haloi,4,2,0,1,4,6.091452,0,6.194796,16.286248,Clear
+245,Other Platform,Aryan Chhabra,4,2,0,1,4,6.091452,0,6.194796,16.286248,Clear
+246,Other Platform,Thejashwar M,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+247,Other Platform,bhakti abhijeet bhuskute bhuskute,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+248,Google Forms,Rudraasis Chakraborty,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+249,Other Platform,Palak Sooryavanshi,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+250,Google Forms,Rishav Paul Chowdhury,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+251,Other Platform,Sohan Sikdar,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+252,Other Platform,Shreyashi Pandey,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+253,Other Platform,Aryan Kumar,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+254,Other Platform,Azlaan Jan,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+255,Other Platform,Rudransh Seth Seth,4,4,0,0,4,12.182904,0,0,16.182904,Clear
+256,Other Platform,Antana Mukherjee,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+257,Other Platform,Sreeraj K,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+258,Other Platform,Neeraj kumar,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+259,Google Forms,Dhairya,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+260,Other Platform,Shaan Virk,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+261,Other Platform,Divyanshu Divya,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+262,Other Platform,Shubhank AGASE,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+263,Other Platform,Ankit Kumar,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+264,Other Platform,AYUSH BHARGAV,5,2,1,0,5,6.091452,4.822946,0,15.914397,Clear
+265,Other Platform,Sainika Kumari,3,4,0,0,3,12.182904,0,0,15.182904,Clear
+266,Other Platform,Hardik Bharti,4,2,1,0,4,6.091452,4.822946,0,14.914397,Clear
+267,Other Platform,Pritish Pranjal,4,2,1,0,4,6.091452,4.822946,0,14.914397,Clear
+268,Other Platform,Aditya Ranjan Roy,4,2,1,0,4,6.091452,4.822946,0,14.914397,Clear
+269,Other Platform,Shubh Mohan Kedia,5,0,2,0,5,0,9.645891,0,14.645891,Clear
+270,Other Platform,Haifa Mehmood,5,1,0,1,5,3.045726,0,6.194796,14.240522,Clear
+271,Google Forms,Yaalini V,2,4,0,0,2,12.182904,0,0,14.182904,Clear
+272,Other Platform,Dhritiman Das,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+273,Other Platform,Shourya Raikwar,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+274,Other Platform,Om Bojewar,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+275,Other Platform,Prince Jha,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+276,Other Platform,Mayank Ranjan,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+277,Other Platform,Saswata Ghosh,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+278,Other Platform,Tanya Gangwar,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+279,Other Platform,Sriram Durai Rajan,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+280,Other Platform,Khushbu Kumari,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+281,Other Platform,Soham Mukherjee,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+282,Other Platform,Abhik Banerjee,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+283,Other Platform,Piyush Kashyap,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+284,Other Platform,ANIK SARDAR,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+285,Other Platform,Adithya Girish,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+286,Other Platform,Alok Rajak,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+287,Other Platform,Ashitha A,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+288,Other Platform,Shreyam Seth,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+289,Google Forms,Gungun Agarwal,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+290,Other Platform,Saptarshi DN Kalita,5,3,0,0,5,9.137178,0,0,14.137178,Clear
+291,Other Platform,Takshak Khandal,3,2,1,0,3,6.091452,4.822946,0,13.914397,Clear
+292,Other Platform,Dibyajyoti Jena,3,2,1,0,3,6.091452,4.822946,0,13.914397,Clear
+293,Other Platform,Priyam Chakraborty,4,1,0,1,4,3.045726,0,6.194796,13.240522,Clear
+294,Google Forms,Aryan Pritam,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+295,Other Platform,Anuj Pal,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+296,Other Platform,Dhruv Anand,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+297,Other Platform,Ipsit Raj,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+298,Google Forms,Jai pandey,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+299,Google Forms,Darsheel Raghav,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+300,Google Forms,Suraj Pratap Singh,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+301,Other Platform,Nischinth Karthik,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+302,Google Forms,Shivam kumar verma,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+303,Google Forms,Samar Shankar Kokare,4,3,0,0,4,9.137178,0,0,13.137178,Clear
+304,Other Platform,Yash Singhal,5,1,1,0,5,3.045726,4.822946,0,12.868672,Clear
+305,Other Platform,Satyam Vinayak,5,1,1,0,5,3.045726,4.822946,0,12.868672,Clear
+306,Other Platform,Aryan Das,5,1,1,0,5,3.045726,4.822946,0,12.868672,Clear
+307,Other Platform,Daksh Agrawal,3,1,0,1,3,3.045726,0,6.194796,12.240522,Clear
+308,Other Platform,Aman Jha,3,1,0,1,3,3.045726,0,6.194796,12.240522,Clear
+309,Google Forms,Meet,3,1,0,1,3,3.045726,0,6.194796,12.240522,Clear
+310,Google Forms,Daksh Agrawal,3,1,0,1,3,3.045726,0,6.194796,12.240522,Clear
+311,Google Forms,Ronit Kumar Sharma,0,4,0,0,0,12.182904,0,0,12.182904,Clear
+312,Other Platform,Shashwat Garg,0,4,0,0,0,12.182904,0,0,12.182904,Clear
+313,Google Forms,Shaurya Kumar Sahu,3,3,0,0,3,9.137178,0,0,12.137178,Clear
+314,Other Platform,Gaurav Nehete,3,3,0,0,3,9.137178,0,0,12.137178,Clear
+315,Google Forms,Piyush choudhary,3,3,0,0,3,9.137178,0,0,12.137178,Clear
+316,Other Platform,NITISH KUMAR,3,3,0,0,3,9.137178,0,0,12.137178,Clear
+317,Other Platform,Aadya Wadhwa,3,3,0,0,3,9.137178,0,0,12.137178,Clear
+318,Other Platform,Aditya Hasbe,4,1,1,0,4,3.045726,4.822946,0,11.868672,Clear
+319,Other Platform,Anvik Vishwakarma,4,1,1,0,4,3.045726,4.822946,0,11.868672,Clear
+320,Other Platform,Yeeshu Raj Yadav,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+321,Other Platform,Yadunandan Sudharsan,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+322,Other Platform,Huzaif ul haq Haq,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+323,Other Platform,Vaibhav Parashar,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+324,Other Platform,Prince,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+325,Other Platform,Kaushik K V,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+326,Other Platform,Ekta Asudani,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+327,Other Platform,Rudra Chaudhari,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+328,Other Platform,Suparanpreet Singh,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+329,Other Platform,Sigarambotla Prajwal,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+330,Other Platform,Shaurya Seivastva,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+331,Other Platform,Gunta Jathin,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+332,Other Platform,Aditya Satish,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+333,Other Platform,Adhiraj Mishra,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+334,Other Platform,Subhranil Pradhan,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+335,Other Platform,Dhairya Gupta,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+336,Other Platform,Rohit Kaushik,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+337,Google Forms,Rishabh Verma,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+338,Google Forms,Ayantina Talukder,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+339,Google Forms,Shreya jain,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+340,Google Forms,MAYANK RANJAN,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+341,Other Platform,Adhrit Pradeep,5,2,0,0,5,6.091452,0,0,11.091452,Clear
+342,Other Platform,Advaya Gupta,0,2,1,0,0,6.091452,4.822946,0,10.914397,Clear
+343,Google Forms,Dharya kumar,0,2,1,0,0,6.091452,4.822946,0,10.914397,Clear
+344,Other Platform,Himanshu Raj Raj,3,1,1,0,3,3.045726,4.822946,0,10.868672,Clear
+345,Other Platform,Arnav Angral,4,0,0,1,4,0,0,6.194796,10.194796,Clear
+346,Other Platform,Atharv Ninawe,4,0,0,1,4,0,0,6.194796,10.194796,Clear
+347,Other Platform,Aahan Sarin,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+348,Other Platform,Archit Kumar,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+349,Other Platform,Yatharth Santosh Shinde,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+350,Other Platform,ARGHYA HALDAR,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+351,Other Platform,Kairav Kaveen,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+352,Other Platform,Prasham Sarkar,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+353,Other Platform,Aarush Kumar,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+354,Other Platform,Ojas Kumar,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+355,Other Platform,Shashank Kumar Prasad,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+356,Other Platform,Souparno Karmakar,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+357,Google Forms,Abhishek Raj,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+358,Google Forms,Advaith Tumiki,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+359,Google Forms,Devesh Patra,4,2,0,0,4,6.091452,0,0,10.091452,Clear
+360,Other Platform,Nishanth Alampally,2,1,1,0,2,3.045726,4.822946,0,9.868672,Clear
+361,Other Platform,Sreenidhi,5,0,1,0,5,0,4.822946,0,9.822946,Clear
+362,Other Platform,Divyansh Agrawal,5,0,1,0,5,0,4.822946,0,9.822946,Clear
+363,Other Platform,Heetanshi Amin,3,0,0,1,3,0,0,6.194796,9.194796,Clear
+364,Google Forms,Vidhan tiwari,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+365,Other Platform,Pranahit Kotal,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+366,Other Platform,RONITTH DHAWAN,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+367,Other Platform,Vasista Harsha Thumbaraguddi,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+368,Other Platform,Vidhan Tiwari,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+369,Other Platform,Saumya Pillewan,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+370,Other Platform,Manasvi Rajesh,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+371,Other Platform,Jinia Biswas,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+372,Other Platform,Irfan Ahmad Bhat,3,2,0,0,3,6.091452,0,0,9.091452,Clear
+373,Google Forms,K S SAI RITHVIK KUMAR,1,1,1,0,1,3.045726,4.822946,0,8.868672,Clear
+374,Google Forms,Himanshu Prasad,1,1,1,0,1,3.045726,4.822946,0,8.868672,Clear
+375,Other Platform,Hiral Chittora,2,2,0,0,2,6.091452,0,0,8.091452,Clear
+376,Other Platform,Parth Kawathe,2,2,0,0,2,6.091452,0,0,8.091452,Clear
+377,Other Platform,Amit Kumar,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+378,Other Platform,Sankha Subhra Manna,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+379,Other Platform,Darsh Sodani,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+380,Other Platform,Shaurya Shetgaonkar,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+381,Other Platform,Dhruv Bisht,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+382,Other Platform,Abhinav Srivastava,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+383,Other Platform,Aryan Bhargava,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+384,Other Platform,Rishabh Verma,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+385,Other Platform,Harshvardhan Singh,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+386,Other Platform,Pranshu JHA,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+387,Other Platform,Prince Hariyani,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+388,Other Platform,Aryan Raj,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+389,Google Forms,Zouha Muzafar Zargar,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+390,Google Forms,Anirudh Padegal,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+391,Other Platform,Supriyo Ghosh,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+392,Other Platform,Aditya,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+393,Other Platform,Vibhor Chandra Shandilya,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+394,Google Forms,Aryan Vishnu Fugnar,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+395,Other Platform,Amol Gupta,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+396,Other Platform,Tanishka Gham,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+397,Other Platform,Daksh Agarwal,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+398,Other Platform,ARITRA DAS SARKAR,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+399,Other Platform,Ajay Verma,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+400,Other Platform,ANURAG ANAND,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+401,Other Platform,Viraj Pahune,5,1,0,0,5,3.045726,0,0,8.045726,Clear
+402,Other Platform,Soumojit Saren,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+403,Google Forms,Swastik Raj,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+404,Other Platform,Shreyas Gupta,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+405,Other Platform,Shaunak Agrawal,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+406,Other Platform,Sajal Goyal,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+407,Google Forms,Yuvraaj Verma,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+408,Other Platform,Ayam Sharma,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+409,Other Platform,ARCHISMAN MISHRA,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+410,Other Platform,Tanishk Agarwal Agarwal,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+411,Other Platform,Krishiv Mohan,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+412,Google Forms,Vijayasree RS,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+413,Other Platform,Malolan Sundar,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+414,Other Platform,Tankala Lalith Sai,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+415,Other Platform,Eakansh Paul,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+416,Other Platform,vaishnavi,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+417,Other Platform,Abdul Haadi Zargar,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+418,Other Platform,Anish Gupta,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+419,Other Platform,Saumya panchal,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+420,Other Platform,Mitul Agrawal,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+421,Other Platform,Atharv Kumar,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+422,Google Forms,PUNASCHA DAS,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+423,Other Platform,Garvit Choudhary,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+424,Other Platform,Jagan Khanna,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+425,Other Platform,Akshit Agarwal,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+426,Other Platform,Aditya Prasad,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+427,Other Platform,RISHAV SIDDARTH,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+428,Google Forms,Rajdipta Bhattacharjee,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+429,Google Forms,B K SHRIRAAM,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+430,Other Platform,AYUSH RAJ,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+431,Google Forms,Soumojit Saren,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+432,Other Platform,Rishabh Patel,4,1,0,0,4,3.045726,0,0,7.045726,Clear
+433,Other Platform,Aditya,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+434,Other Platform,Harshat Mishra,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+435,Other Platform,Eashan gupta,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+436,Other Platform,Agastya,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+437,Google Forms,Astitva Pratap Singh,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+438,Other Platform,Shah Abdullah Hammaad,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+439,Other Platform,SHRIRAAM BALASUBRAMANI,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+440,Google Forms,Navaya Dhingra,3,1,0,0,3,3.045726,0,0,6.045726,Clear
+441,Other Platform,Suvi Nain,2,1,0,0,2,3.045726,0,0,5.045726,Clear
+442,Other Platform,Athiyan M,2,1,0,0,2,3.045726,0,0,5.045726,Clear
+443,Other Platform,Kavya Khodwe,2,1,0,0,2,3.045726,0,0,5.045726,Clear
+444,Other Platform,Deepak Gupta,2,1,0,0,2,3.045726,0,0,5.045726,Clear
+445,Other Platform,Varad Sharma,2,1,0,0,2,3.045726,0,0,5.045726,Clear
+446,Google Forms,Samiksha,2,1,0,0,2,3.045726,0,0,5.045726,Clear
+447,Other Platform,Anubhav Biswas,5,0,0,0,5,0,0,0,5,Clear
+448,Google Forms,Bipul Kumar,5,0,0,0,5,0,0,0,5,Clear
+449,Other Platform,Koumudi Bhattacharjee,5,0,0,0,5,0,0,0,5,Clear
+450,Other Platform,Shaurya Advani,5,0,0,0,5,0,0,0,5,Clear
+451,Other Platform,Aman Seth,5,0,0,0,5,0,0,0,5,Clear
+452,Other Platform,prince,5,0,0,0,5,0,0,0,5,Clear
+453,Other Platform,Arihant Jain,5,0,0,0,5,0,0,0,5,Clear
+454,Other Platform,Utkarsh TRIPATHI,5,0,0,0,5,0,0,0,5,Clear
+455,Other Platform,Basurnab Mondal,5,0,0,0,5,0,0,0,5,Clear
+456,Other Platform,Shreyas Garg,5,0,0,0,5,0,0,0,5,Clear
+457,Other Platform,Bhargav Chandra Lall,5,0,0,0,5,0,0,0,5,Clear
+458,Other Platform,Arjun Chitlange,5,0,0,0,5,0,0,0,5,Clear
+459,Other Platform,Parmarth Sinha,5,0,0,0,5,0,0,0,5,Clear
+460,Other Platform,Arjyabir Nayak,5,0,0,0,5,0,0,0,5,Clear
+461,Other Platform,Harsh Bhattad,5,0,0,0,5,0,0,0,5,Clear
+462,Other Platform,Julfikar Chowdhury,5,0,0,0,5,0,0,0,5,Clear
+463,Other Platform,Aakhyaan Agrawal,5,0,0,0,5,0,0,0,5,Clear
+464,Other Platform,Khushi,5,0,0,0,5,0,0,0,5,Clear
+465,Other Platform,Gorti Pranav,5,0,0,0,5,0,0,0,5,Clear
+466,Other Platform,Malav kunj,5,0,0,0,5,0,0,0,5,Clear
+467,Other Platform,Surya Abbineni,5,0,0,0,5,0,0,0,5,Clear
+468,Other Platform,Sashwat Kumar Singh,5,0,0,0,5,0,0,0,5,Clear
+469,Other Platform,Ardra Makwana,5,0,0,0,5,0,0,0,5,Clear
+470,Other Platform,Akkriti Behuray,5,0,0,0,5,0,0,0,5,Clear
+471,Other Platform,Viram Parakh,5,0,0,0,5,0,0,0,5,Clear
+472,Other Platform,Shubham Shrivastava,5,0,0,0,5,0,0,0,5,Clear
+473,Other Platform,Somrudra Mandal,1,1,0,0,1,3.045726,0,0,4.045726,Clear
+474,Other Platform,Pushpkamal Pandey,1,1,0,0,1,3.045726,0,0,4.045726,Clear
+475,Other Platform,Shubham Jain,1,1,0,0,1,3.045726,0,0,4.045726,Clear
+476,Google Forms,Kritheesh K N,1,1,0,0,1,3.045726,0,0,4.045726,Clear
+477,Google Forms,Gopinath chakraborty,1,1,0,0,1,3.045726,0,0,4.045726,Clear
+478,Other Platform,Biswajeet pradhan,4,0,0,0,4,0,0,0,4,Clear
+479,Other Platform,Arnav Tiwari,4,0,0,0,4,0,0,0,4,Clear
+480,Other Platform,Arman Azim,4,0,0,0,4,0,0,0,4,Clear
+481,Other Platform,Syed Rayan Andrabi,4,0,0,0,4,0,0,0,4,Clear
+482,Other Platform,Schiva,4,0,0,0,4,0,0,0,4,Clear
+483,Other Platform,Aradhya,4,0,0,0,4,0,0,0,4,Clear
+484,Google Forms,RACHANA MOHAPATRA,4,0,0,0,4,0,0,0,4,Clear
+485,Google Forms,ANURAG SAURABH,4,0,0,0,4,0,0,0,4,Clear
+486,Other Platform,Mandar Kasulkar,4,0,0,0,4,0,0,0,4,Clear
+487,Other Platform,Qabeer Arora,4,0,0,0,4,0,0,0,4,Clear
+488,Other Platform,PRIYANSHU CHATTARAJ,4,0,0,0,4,0,0,0,4,Clear
+489,Other Platform,Shaurya Singh,4,0,0,0,4,0,0,0,4,Clear
+490,Other Platform,Vansh Badjatya,4,0,0,0,4,0,0,0,4,Clear
+491,Google Forms,Utsab Bajar,4,0,0,0,4,0,0,0,4,Clear
+492,Google Forms,Debojit Das,4,0,0,0,4,0,0,0,4,Clear
+493,Other Platform,Shivang Kashyap,4,0,0,0,4,0,0,0,4,Clear
+494,Other Platform,Anirudh Palokodeti,4,0,0,0,4,0,0,0,4,Clear
+495,Other Platform,Kolluri Raghuram,4,0,0,0,4,0,0,0,4,Clear
+496,Other Platform,Bhavya Rakshit,4,0,0,0,4,0,0,0,4,Clear
+497,Other Platform,Anirudh Padegal,4,0,0,0,4,0,0,0,4,Clear
+498,Other Platform,Darsh Poomadathil,4,0,0,0,4,0,0,0,4,Clear
+499,Other Platform,ANURAG Saurabh,4,0,0,0,4,0,0,0,4,Clear
+500,Other Platform,Shikha Kumari,0,1,0,0,0,3.045726,0,0,3.045726,Clear
+501,Other Platform,Vinamarasai KishoreKumar,3,0,0,0,3,0,0,0,3,Clear
+502,Google Forms,Nitya Dhingra,3,0,0,0,3,0,0,0,3,Clear
+503,Other Platform,Shivansh Gupta,3,0,0,0,3,0,0,0,3,Clear
+504,Other Platform,Purva M,3,0,0,0,3,0,0,0,3,Clear
+505,Other Platform,Sriharshith Bala,3,0,0,0,3,0,0,0,3,Clear
+506,Other Platform,Vaibhav Bhardwaj,3,0,0,0,3,0,0,0,3,Clear
+507,Other Platform,Mohammad Aqeel Jan,3,0,0,0,3,0,0,0,3,Clear
+508,Other Platform,Ayush Raj,3,0,0,0,3,0,0,0,3,Clear
+509,Other Platform,Abhinav Roy,3,0,0,0,3,0,0,0,3,Clear
+510,Other Platform,Shehriyar Bukhari,3,0,0,0,3,0,0,0,3,Clear
+511,Other Platform,utkarsh shukla,3,0,0,0,3,0,0,0,3,Clear
+512,Other Platform,Adarsha Ghosh,3,0,0,0,3,0,0,0,3,Clear
+513,Other Platform,Utkarsh Shah,3,0,0,0,3,0,0,0,3,Clear
+514,Other Platform,Kunal Kumar,3,0,0,0,3,0,0,0,3,Clear
+515,Other Platform,Amit kumar,3,0,0,0,3,0,0,0,3,Clear
+516,Other Platform,RIDDHI KANT MISHRA,3,0,0,0,3,0,0,0,3,Clear
+517,Other Platform,Abhinav Anand,3,0,0,0,3,0,0,0,3,Clear
+518,Other Platform,Navdeep Jadoun,3,0,0,0,3,0,0,0,3,Clear
+519,Other Platform,Avant Mohan Agrawal,2,0,0,0,2,0,0,0,2,Clear
+520,Google Forms,Riddhima Jha,2,0,0,0,2,0,0,0,2,Clear
+521,Other Platform,Ayush Kumar,2,0,0,0,2,0,0,0,2,Clear
+522,Other Platform,Moksha Reddy,2,0,0,0,2,0,0,0,2,Clear
+523,Other Platform,Phani Mahankali,2,0,0,0,2,0,0,0,2,Clear
+524,Other Platform,Kumar Shankar,2,0,0,0,2,0,0,0,2,Clear
+525,Other Platform,Jivyansh Goyal,2,0,0,0,2,0,0,0,2,Clear
+526,Google Forms,Tushar khurana,2,0,0,0,2,0,0,0,2,Clear
+527,Other Platform,vedant,2,0,0,0,2,0,0,0,2,Clear
+528,Other Platform,Kumar shubh,1,0,0,0,1,0,0,0,1,Clear
+529,Google Forms,Shriprasad Ganesh Sontakke,1,0,0,0,1,0,0,0,1,Clear
+530,Other Platform,Siddharth Singh,0,0,0,0,0,0,0,0,0,Clear
+531,Other Platform,Om Kumar Kushwaha,0,0,0,0,0,0,0,0,0,Clear
+532,Other Platform,Shresht R,0,0,0,0,0,0,0,0,0,Clear
+533,Other Platform,Uddipa Pal,0,0,0,0,0,0,0,0,0,Clear
+534,Other Platform,Meet Mourya,0,0,0,0,0,0,0,0,0,Clear
+535,Other Platform,Chaziel Darji,0,0,0,0,0,0,0,0,0,Clear
+536,Other Platform,Aarush Kumar,0,0,0,0,0,0,0,0,0,Clear
+537,Other Platform,Kamalesh Sarkar,0,0,0,0,0,0,0,0,0,Clear
+538,Other Platform,SHUBHAM SINGH,0,0,0,0,0,0,0,0,0,Clear
+539,Other Platform,Rishabh Tiwari,0,0,0,0,0,0,0,0,0,Clear;
 
         let csvData = [];
 
