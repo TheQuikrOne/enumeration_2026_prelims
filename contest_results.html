@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contest Results</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .input-section {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        input[type="file"] {
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .results {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+        }
+
+        .result-item {
+            background: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .result-item h3 {
+            color: #667eea;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .score-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+
+        .score-label {
+            color: #666;
+            font-weight: 600;
+        }
+
+        .score-value {
+            color: #333;
+            font-weight: 700;
+        }
+
+        .total-score {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-left: 5px solid #ff6b6b;
+            color: #856404;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .error {
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .rank-display {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contest Results Checker</h1>
+
+        <div class="input-section">
+            <label for="csvFile">Upload CSV File:</label>
+            <input type="file" id="csvFile" accept=".csv" required>
+
+            <label for="nameInput">Enter Your Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name exactly as registered" required>
+
+            <button onclick="searchResults()">Get Results</button>
+        </div>
+
+        <div id="resultsContainer" class="hidden"></div>
+    </div>
+
+    <script>
+        let csvData = [];
+
+        document.getElementById('csvFile').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    parseCSV(event.target.result);
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        function parseCSV(text) {
+            const lines = text.split('\n');
+            const headers = lines[0].split(',').map(h => h.trim());
+
+            csvData = [];
+            for (let i = 1; i < lines.length; i++) {
+                if (lines[i].trim() === '') continue;
+
+                const values = lines[i].split(',').map(v => v.trim());
+                const row = {};
+                headers.forEach((header, index) => {
+                    row[header] = values[index];
+                });
+                csvData.push(row);
+            }
+        }
+
+        function searchResults() {
+            const nameInput = document.getElementById('nameInput').value.trim();
+            const resultsContainer = document.getElementById('resultsContainer');
+
+            if (!nameInput) {
+                resultsContainer.innerHTML = '<div class="error">Please enter a name.</div>';
+                resultsContainer.classList.remove('hidden');
+                return;
+            }
+
+            if (csvData.length === 0) {
+                resultsContainer.innerHTML = '<div class="error">Please upload a CSV file first.</div>';
+                resultsContainer.classList.remove('hidden');
+                return;
+            }
+
+            const result = csvData.find(row => 
+                row.Name && row.Name.toLowerCase() === nameInput.toLowerCase()
+            );
+
+            if (!result) {
+                resultsContainer.innerHTML = '<div class="error">No results found for this name. Please check the spelling.</div>';
+                resultsContainer.classList.remove('hidden');
+                return;
+            }
+
+            displayResults(result);
+        }
+
+        function displayResults(data) {
+            const resultsContainer = document.getElementById('resultsContainer');
+
+            let html = '<div class="results">';
+            html += `<div class="rank-display">Rank: ${data.Rank || 'N/A'}</div>`;
+            html += `<h2 style="text-align: center; margin-bottom: 20px; color: #333;">${data.Name}</h2>`;
+
+            // Warmup Section
+            html += `
+                <div class="result-item">
+                    <h3>Warmup</h3>
+                    <div class="score-row">
+                        <span class="score-label">Raw Score:</span>
+                        <span class="score-value">${data.WarmupRaw || '0'}</span>
+                    </div>
+                    <div class="score-row">
+                        <span class="score-label">Marks:</span>
+                        <span class="score-value">${data.WarmupScore || '0'}</span>
+                    </div>
+                </div>
+            `;
+
+            // Single Choice Questions
+            html += `
+                <div class="result-item">
+                    <h3>Single Choice Questions (SCQ)</h3>
+                    <div class="score-row">
+                        <span class="score-label">Raw Score:</span>
+                        <span class="score-value">${data.SCQRaw || '0'}</span>
+                    </div>
+                    <div class="score-row">
+                        <span class="score-label">Marks:</span>
+                        <span class="score-value">${data.SCQScore || '0'}</span>
+                    </div>
+                </div>
+            `;
+
+            // Multiple Choice Questions
+            html += `
+                <div class="result-item">
+                    <h3>Multiple Choice Questions (MCQ)</h3>
+                    <div class="score-row">
+                        <span class="score-label">Raw Score:</span>
+                        <span class="score-value">${data.MCQRaw || '0'}</span>
+                    </div>
+                    <div class="score-row">
+                        <span class="score-label">Marks:</span>
+                        <span class="score-value">${data.MCQScore || '0'}</span>
+                    </div>
+                </div>
+            `;
+
+            // Integer Questions
+            html += `
+                <div class="result-item">
+                    <h3>Integer Questions</h3>
+                    <div class="score-row">
+                        <span class="score-label">Raw Score:</span>
+                        <span class="score-value">${data.IntRaw || '0'}</span>
+                    </div>
+                    <div class="score-row">
+                        <span class="score-label">Marks:</span>
+                        <span class="score-value">${data.IntScore || '0'}</span>
+                    </div>
+                </div>
+            `;
+
+            // Total Score
+            html += `
+                <div class="total-score">
+                    Total Score: ${data.TotalScore || '0'}
+                </div>
+            `;
+
+            // Proctoring Warning
+            if (data.Proctoring && data.Proctoring.toLowerCase() !== 'clear') {
+                html += `
+                    <div class="warning">
+                        ⚠️ Your contest was flagged because of suspicious activity, please contact at _phone_ for more details.
+                    </div>
+                `;
+            }
+
+            html += '</div>';
+
+            resultsContainer.innerHTML = html;
+            resultsContainer.classList.remove('hidden');
+        }
+
+        // Allow Enter key to submit
+        document.getElementById('nameInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchResults();
+            }
+        });
+    </script>
+</body>
+</html>
